@@ -128,7 +128,7 @@ body {
 .btn {
   background-color: var(--primary-red);
   color: white;
-  border: none;
+  border: 1px solid var(--primary-red); 
   padding: 8px 16px;
   border-radius: 2px;
   cursor: pointer;
@@ -136,8 +136,17 @@ body {
   margin-top: 10px;
 }
 
+
 .btn:hover {
   background-color: var(--dark-red);
+}
+
+.btn.active {
+  background-color: #fff;       /* 背景变白 */
+  color: var(--primary-red);    /* 文字变红 */
+  border-color: var(--primary-red);
+  font-weight: bold;            /* 选中时文字加粗，更醒目 */
+  cursor: default;              /* 选中后鼠标变为默认状态 */
 }
 
 /* 底部 */
@@ -148,3 +157,7 @@ body {
   color: #999;
   margin-top: 50px;
 }
+
+.indent {
+        text-indent: 2em; /* 首行缩进2个字符宽度 */
+    }
